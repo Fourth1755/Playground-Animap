@@ -1,0 +1,245 @@
+[
+    {
+        "id":1,
+        "studio_name":"CloverWorks",
+        "studio_year":"2018",
+        "studio_description":"CloverWorks (CloverWorks, Inc) is a Japanese subsidiary animation company from Suginami, Tokyo. It was original named Kouenji Studio under A-1 Pictures owned by parent company Aniplex. The studio was rebranded as CloverWorks in April 2018. In October 2018, CloverWorks separated from A-1 Pictures while remaining a subsidary of Aniplex. The studio has released 25 projects since its rebranding with an additional four projects - Slow Start, Darling in the Franxx, Persona 5: The Animation, and Ace Attorney Season 2 - changing the credited studio from A-1 Pictures to CloverWorks either during or after their original runs.",
+        "studio_image":"",
+        "studio_logo":"https://cdn.myanimelist.net/img/common/companies/1835.png",
+        "studio_established":"Oct 1, 2018"
+    },
+    {
+        "id":2,
+        "studio_name":"A-1 Pictures",
+        "studio_year":"2005",
+        "studio_description":"A-1 Pictures (A-1 Pictures Inc.) is a Japanese animation studio in Suginami, Tokyo. Founded by former Sunrise producer Mikihiro Iwata in 2005, it was established as a subsidary of Aniplex. The studio was meant to oversee Aniplex's family-oriented series before it evolved into producing various independent anime projects.",
+        "studio_image":"",
+        "studio_logo":"https://cdn.myanimelist.net/img/common/companies/56.png",
+        "studio_established":"May 9, 2005"
+    },
+    {
+        "id":3,
+        "studio_name":"Wit Studio",
+        "studio_year":"2012",
+        "studio_description":"",
+        "studio_image":"",
+        "studio_logo":"https://cdn.myanimelist.net/img/common/companies/858.png",
+        "studio_established":"Jun 1, 2012"
+    },
+    {
+        "id":4,
+        "studio_name":"Bones",
+        "studio_year":"1998",
+        "studio_description":"Bones (Bones Inc.) is a Japanese animation studio based in Suginami, Tokyo. The studio was founded by previous Sunrise producer Masahiko Minami and animators Hiroshi Ousaka and Toshihiro Kawamoto in 1998. Following Sunrise's production model, Bones' founders divided the company into five smaller studios, Studio A-E.",
+        "studio_image":"",
+        "studio_logo":"https://cdn.myanimelist.net/img/common/companies/4.png",
+        "studio_established":"Oct, 1998"
+    },
+    {
+        "id":5,
+        "studio_name":"White Fox",
+        "studio_year":"2007",
+        "studio_description":"",
+        "studio_image":"",
+        "studio_logo":"https://cdn.myanimelist.net/img/common/companies/314.png",
+        "studio_established":"Apr, 2007"
+    },
+    {
+        "id":6,
+        "studio_name":"Madhouse",
+        "studio_year":"1972",
+        "studio_description":"Madhouse (MADHOUSE Inc.) is a Japanese animation studio based in Nakano City, Tokyo. Ex-Mushi Production animators—including Masao Maruyama, Osamu Dezaki, Rintarou, and Yoshiaki Kawajiri—are often credited with founding the company in 1972, though Rintarou would not join the studio until 1982. Madhouse primarily did contract work for other studios until the 1990s, when it achieved success independently. Television adaptations of Trigun and Clamp's Cardcaptor Sakura in 1998 were hits domestically and later aired overseas, and the same year director Satoshi Kon's Perfect Blue was released as his first of four critically-acclaimed films with the company.",
+        "studio_image":"",
+        "studio_logo":"https://cdn.myanimelist.net/img/common/companies/11.png",
+        "studio_established":"Oct, 1972"
+    },
+    {
+        "id":7,
+        "studio_name":"Kyoto Animation",
+        "studio_year":"1985",
+        "studio_description":"Kyoto Animation (Kyoto Animation Co., Ltd.) (often abbreviated KyoAni) is a Japanese animation studio based in Uji, Kyoto Prefecture. Youko Hatta (born Youko Sugiyama), who had previously studied under Osamu Tezuka as an artist at Mushi Production, founded the company with her husband, Hideaki Hatta, in 1981. Kyoto Animation spent its early years doing finishing work for other companies' productions, but opened its own drawing department in 1986, the year following its establishment as a limited company.",
+        "studio_image":"",
+        "studio_logo":"https://cdn.myanimelist.net/img/common/companies/2.png",
+        "studio_established":"Jul 12, 1985"
+    },
+    {
+        "id":8,
+        "studio_name":"ufotable",
+        "studio_year":"2000",
+        "studio_description":"ufotable is a Japanese animation studio based in Suginami, Tokyo. Hikaru Kondou—a former production assistant at Tokyo Movie Shinsha (now TMS Entertainment) and Telecom Animation Film and producer at Step Eizou—founded the studio in October 2000. The company's name originates from a UFO-shaped table Kondou came across as he was devising the studio's vision. He subsequently acquired the table and named the studio after it.",
+        "studio_image":"",
+        "studio_logo":"https://cdn.myanimelist.net/img/common/companies/43.png",
+        "studio_established":"Oct, 2000"
+    },
+    {
+        "id":9,
+        "studio_name":"Production I.G",
+        "studio_year":"2007",
+        "studio_description":"",
+        "studio_image":"",
+        "studio_logo":"https://cdn.myanimelist.net/img/common/companies/10.png",
+        "studio_established":"Nov, 2007"
+    },
+    {
+        "id":10,
+        "studio_name":"J.C.Staff",
+        "studio_year":"1986",
+        "studio_description":"J.C.Staff (J.C.STAFF Co., Ltd.) is a Japanese animation studio based in Musashino, Tokyo, and a member of The Association of Japanese Animations. Former Tatsunoko Production producer Tomoyuki Miyata founded the studio in January 1986, which specialized in Original Video Animation (OVA) in its early years. J.C.Staff made the move to television with the release of Metal Fighter Miku in the summer of 1994. It has since independently produced or contributed to over 200 animated works.",
+        "studio_image":"",
+        "studio_logo":"https://cdn.myanimelist.net/img/common/companies/7.png",
+        "studio_established":"Jan 18, 1986"
+    },
+    {
+        "id":11,
+        "studio_name":"David Production",
+        "studio_year":"2007",
+        "studio_description":"",
+        "studio_image":"",
+        "studio_logo":"https://cdn.myanimelist.net/img/common/companies/287.png",
+        "studio_established":"Sep, 2007"
+    },
+    {
+        "id":12,
+        "studio_name":"TMS Entertainment",
+        "studio_year":"1946",
+        "studio_description":"",
+        "studio_image":"",
+        "studio_logo":"https://cdn.myanimelist.net/img/common/companies/73.png",
+        "studio_established":"Oct, 1946"
+    },
+    {
+        "id":13,
+        "studio_name":"Studio Ghibli",
+        "studio_year":"1985",
+        "studio_description":"",
+        "studio_image":"",
+        "studio_logo":"https://cdn.myanimelist.net/img/common/companies/21.png",
+        "studio_established":"Jun, 1985"
+    },
+    {
+        "id":14,
+        "studio_name":"P.A. Works",
+        "studio_year":"2000",
+        "studio_description":"",
+        "studio_image":"",
+        "studio_logo":"https://cdn.myanimelist.net/img/common/companies/132.png",
+        "studio_established":"Nov 10, 2000"
+    },
+    {
+        "id":15,
+        "studio_name":"Sunrise",
+        "studio_year":"1976",
+        "studio_description":"",
+        "studio_image":"",
+        "studio_logo":"https://cdn.myanimelist.net/img/common/companies/14.png",
+        "studio_established":"Nov, 1976"
+    },
+    {
+        "id":16,
+        "studio_name":"MAPPA",
+        "studio_year":"2011",
+        "studio_description":"MAPPA (MAPPA Co., Ltd.) is a Japanese animation studio founded by Masao Maruyama in June 2014, following his departure from Madhouse. It employs 250 people as of December 2021 between its Tokyo and Sendai studios. Maruyama's intent was for the film Kono Sekai no Katasumi ni (In This Corner of the World) to be the studio's first release, though the project would not be complete until 2016. By that time, the studio had already co-produced Sakamichi no Apollon (Kids on the Slope) and Hajime no Ippo: Rising, and released its first original anime—Zankyou no Terror (Terror in Resonance)",
+        "studio_image":"",
+        "studio_logo":"https://cdn.myanimelist.net/img/common/companies/569.png",
+        "studio_established":"Jun 14, 2011"
+    },
+    {
+        "id":17,
+        "studio_name":"Pierrot",
+        "studio_year":"1979",
+        "studio_description":"",
+        "studio_image":"",
+        "studio_logo":"https://cdn.myanimelist.net/img/common/companies/1.png",
+        "studio_established":"May, 1979"
+    },
+    {
+        "id":18,
+        "studio_name":"CoMix Wave Films",
+        "studio_year":"2007",
+        "studio_description":"",
+        "studio_image":"",
+        "studio_logo":"https://cdn.myanimelist.net/img/common/companies/291.png",
+        "studio_established":"Mar, 2007"
+    },
+    {
+        "id":19,
+        "studio_name":"B.CMAY PICTURES",
+        "studio_year":"2017",
+        "studio_description":"",
+        "studio_image":"",
+        "studio_logo":"https://cdn.myanimelist.net/img/common/companies/1350.png",
+        "studio_established":"Apr, 2017"
+    },
+    {
+        "id":20,
+        "studio_name":"Toei Animation",
+        "studio_year":"1948",
+        "studio_description":"",
+        "studio_image":"",
+        "studio_logo":"https://cdn.myanimelist.net/img/common/companies/18.png",
+        "studio_established":"Jan 23, 1948"
+    },
+    {
+        "id":21,
+        "studio_name":"Brain's Base",
+        "studio_year":"1996",
+        "studio_description":"",
+        "studio_image":"",
+        "studio_logo":"https://cdn.myanimelist.net/img/common/companies/112.png",
+        "studio_established":"Jul, 1996"
+    },
+    {
+        "id":22,
+        "studio_name":"Studio 3Hz",
+        "studio_year":"2013",
+        "studio_description":"",
+        "studio_image":"",
+        "studio_logo":"https://cdn.myanimelist.net/img/common/companies/1127.png",
+        "studio_established":"Mar, 2013"
+    },
+    {
+        "id":23,
+        "studio_name":"Lerche",
+        "studio_year":"2011",
+        "studio_description":"",
+        "studio_image":"",
+        "studio_logo":"https://cdn.myanimelist.net/img/common/companies/456.png",
+        "studio_established":"2011"
+    },
+    {
+        "id":24,
+        "studio_name":"LIDENFILMS",
+        "studio_year":"2012",
+        "studio_description":"",
+        "studio_image":"",
+        "studio_logo":"https://cdn.myanimelist.net/img/common/companies/839.png",
+        "studio_established":"Feb 22, 2012"
+    },
+    {
+        "id":25,
+        "studio_name":"Kinema Citrus",
+        "studio_year":"2008",
+        "studio_description":"",
+        "studio_image":"",
+        "studio_logo":"https://cdn.myanimelist.net/img/common/companies/290.png",
+        "studio_established":"Mar 3, 2008"
+    },
+    {
+        "id":26,
+        "studio_name":"Studio Deen",
+        "studio_year":"1975",
+        "studio_description":"",
+        "studio_image":"",
+        "studio_logo":"https://cdn.myanimelist.net/img/common/companies/37.png",
+        "studio_established":"Mar 14, 1975"
+    },
+    {
+        "id":27,
+        "studio_name":"SILVER LINK.",
+        "studio_year":"2007",
+        "studio_description":"SILVER LINK. (SILVER LINK., Inc.) is a Japanese animation studio based in based in Mitaka City, Tokyo. The studio was founded by former Frontline animation producer Hayato Kaneko in December 2007 and specialized in subcontracting for drawing work. The company also owned two subsidiary studios, BEEP Co. and CONNECT Inc., both of which have been dissolved. In 2020, Asahi Broadcasting Group Holdings aquired SILVER LINK.",
+        "studio_image":"",
+        "studio_logo":"https://cdn.myanimelist.net/img/common/companies/300.png",
+        "studio_established":"Dec, 2007"
+    }
+]

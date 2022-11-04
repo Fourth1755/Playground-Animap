@@ -1,0 +1,49 @@
+$colorPink: #FF1493;
+$colorBlack: #000000;
+$colorWhite: #FFFFFF;
+$colorDarkPink: #201020;
+$colorDarkDarkPink :#371037;
+$colorPurple : #7900D8;
+$colorGray : #C3BBBE;
+.adminAnime-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+
+    button {
+        padding: 14px;
+        font-size: 24px;
+        background-color: $colorPurple;
+        color: $colorWhite;
+        cursor: pointer;
+        border: none;
+        border-radius: 15px;
+        
+
+        &:hover {
+            background-color: $colorBlack;
+        }
+    }
+}
+.adminAnime-clear-button{
+    cursor: pointer;
+    padding: 14px;
+    font-size: 18px;
+    padding: 12px 20px 12px 20px;
+    background-color: $colorGray;
+    color: $colorWhite ;
+    border-radius: 8px;
+    border: none;
+    margin-top: 14px;
+    &:hover {
+        background-color: #767374;
+    }
+}
+.adminAnime-container-paper {
+    margin: -20px;
+    display: flex;
+}
+.adminAnime-container-paper-item{
+    margin: 20px;
+    padding: 12px;
+}
