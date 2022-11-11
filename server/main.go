@@ -2,11 +2,17 @@ package main
 
 import (
 	"anime/go-api/controllers"
+	"anime/go-api/initializers"
 	"os"
 
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 )
+
+func init() {
+	initializers.LoadEnvVariables()
+	initializers.ConnectToDb()
+}
 
 func main() {
 	r := gin.Default()
