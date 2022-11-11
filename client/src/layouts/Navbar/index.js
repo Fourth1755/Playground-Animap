@@ -1,8 +1,5 @@
 import './index.scss'
-//import SearchBarAnime from '../SearchBarAnime';
-//import ProfileBar from '../ProfileBar';
 import { Link } from "react-router-dom";
-//import { getUser } from "../../servies/authorize";
 import { useState } from 'react';
 
 const Navbar=()=>{

@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react';
-import AdminTableAnime from "../../component/AdminTableAnime"
+import AdminTableAnime from "../../../components/table/AdminTableAnime"
+import AdminAddAnimeModal from '../../../components/modal/AdminAddAnimeModal';
 import './index.scss'
 import Paper from '@mui/material/Paper';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
-import AdminAddAnimeModal from '../../component/AdminAddAnimeModal';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
@@ -14,6 +14,7 @@ import TextField from '@mui/material/TextField'
 import dayjs from 'dayjs';
 import Datastudio from '../../../data/studio.json'
 //import { fetchAnimeAsync } from '../../actions/animeListAction'
+import { useGetAllAnimesQuery } from '../../../services/anime'
 import {useDispatch,useSelector} from 'react-redux'
 
 const seasonOptions = [
@@ -31,6 +32,8 @@ const AdminAnimePage = () => {
     const [modalAnime, setModalAnime] = useState()
     const [modalMode, setModalMode] = useState('')
     const [open, setOpen] = useState(false);
+
+    const { data, error, isLoading } = useGetAllAnimesQuery()
     const handleOpen = (item, mode) => {
         setModalMode(mode);
         if (mode == "edit") {
@@ -79,8 +82,11 @@ const AdminAnimePage = () => {
     useEffect(()=>{
         //dispatch(fetchAnimeAsync())
     },[])
-    const Dataanime =useSelector(state=>state.animeList)
-    const displayAnime=Dataanime.filter(filterAnime);
+    //const Dataanime = useSelector(state=>state.animeList)
+
+    const displayAnime=data?.filter(filterAnime);
+
+    
     return (
         <div>
             <div className="adminAnime-header">
@@ -151,9 +157,8 @@ const AdminAnimePage = () => {
                         <button className='adminAnime-clear-button' onClick={clearChange}>Clear</button>
                     </div>
                 </div>
-
             </Paper>
-            <AdminTableAnime anime={displayAnime}/>
+            <AdminTableAnime anime={displayAnime} isLoading={isLoading} isError={error}/>
             <AdminAddAnimeModal open={open} onClose={handleClose} anime={modalAnime} mode={modalMode} />
         </div>
     )
