@@ -1,0 +1,56 @@
+$colorPink: #FF1493;
+$colorBlack: #000000;
+$colorWhite: #FFFFFF;
+$colorDarkPink: #201020;
+$colorDarkDarkPink :#371037;
+$colorPurple : #7900D8;
+$colorGray : #C3BBBE;
+
+.modal-body {
+    overflow-y: auto;
+}
+
+.modal-addanime-modalStyles {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 640px;
+    background-color: $colorWhite;
+    border: none;
+    border-radius: 15px;
+
+    h1 {
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+.modal-addanime-container {
+    padding: 20px 50px 20px 50px;
+}
+
+.modal-addanime-container-bottom {
+    padding: 0px 50px 40px 50px;
+    display: flex;
+    justify-content: center;
+    button {
+        cursor: pointer;
+        padding: 14px;
+        font-size: 18px;
+        padding: 12px 20px 12px 20px;
+        background-color: $colorPurple;
+        color: $colorWhite ;
+        border-radius: 8px;
+        border: none;
+
+        &:hover {
+            background-color: $colorBlack;
+        }
+    }
+}
+
+.modal-addanime-form {
+    display: flex;
+    justify-content: space-between;
+}
