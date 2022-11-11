@@ -23,10 +23,7 @@ import AdminHomePage from '../../pages/Admin/AdminHomePage';
 import AdminAnimePage from '../../pages/Admin/AdminAnimePage';
 //import AdminAnimeTagPage from '../../pages/AdminAnimeTagPage';
 import NotFoundPage from '../../pages/NotFoundPage';
-import LoginPage from '../../pages/LoginPage';
-import RegisterPage from '../../pages/RegisterPage';
 import { useNavigate } from "react-router-dom";
-import ProfileBar from '../ProfileBar';
 import './index.scss'
 const drawerWidth = 240;
 
@@ -135,7 +132,7 @@ function SidebarAdmin(props) {
                     <Route path="/" element={<AdminHomePage/>}/>
                     <Route path="*" element={<NotFoundPage/>}/>
                     <Route path="/adminanime" element={<AdminAnimePage/>}/>
-                    <Route path="/admintaganime" element={<AdminAnimeTagPage/>}/>
+                    
                 </Routes>
             </Box>
         </Box>

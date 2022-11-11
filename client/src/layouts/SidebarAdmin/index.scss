@@ -1,0 +1,20 @@
+$colorPink:#FF1493;
+$colorBlack:#000000;
+$colorWhite:#FFFFFF;
+$colorDarkPink:#201020;
+$colorDarkDarkPink :#371037;
+$colorGreen: #1EC602;
+.sidebar-navbar{
+  display: flex;
+  background-color: $colorBlack;
+  justify-content: space-between;
+}
+.logout-button{
+  text-decoration: none;
+  &:hover{
+      color: $colorBlack;
+  }
+  background-color: $colorWhite;
+  padding: 12px;
+  border-radius: 14px;
+}
