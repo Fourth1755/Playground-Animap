@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
-import AdminTableAnime from "../../../components/table/AdminTableAnime"
-import AdminAddAnimeModal from '../../../components/modal/AdminAddAnimeModal';
 import './index.scss'
+import AdminAnimeTable from "../../../components/table/AdminAnimeTable"
+import AdminAddAnimeModal from '../../../components/modal/AdminAddAnimeModal';
+import Datastudio from '../../../data/studio.json'
 import Paper from '@mui/material/Paper';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
@@ -12,10 +13,9 @@ import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import TextField from '@mui/material/TextField'
 import dayjs from 'dayjs';
-import Datastudio from '../../../data/studio.json'
 //import { fetchAnimeAsync } from '../../actions/animeListAction'
 import { useGetAllAnimesQuery } from '../../../services/anime'
-import {useDispatch,useSelector} from 'react-redux'
+import { useDispatch,useSelector } from 'react-redux'
 
 const seasonOptions = [
     { id:1,value: 'Winter', label: 'Winter' },
@@ -158,7 +158,7 @@ const AdminAnimePage = () => {
                     </div>
                 </div>
             </Paper>
-            <AdminTableAnime anime={displayAnime} isLoading={isLoading} isError={error}/>
+            <AdminAnimeTable anime={displayAnime} isLoading={isLoading} isError={error}/>
             <AdminAddAnimeModal open={open} onClose={handleClose} anime={modalAnime} mode={modalMode} />
         </div>
     )
