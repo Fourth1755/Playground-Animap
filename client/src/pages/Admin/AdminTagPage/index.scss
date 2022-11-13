@@ -1,0 +1,59 @@
+$colorPink: #FF1493;
+$colorBlack: #000000;
+$colorWhite: #FFFFFF;
+$colorDarkPink: #201020;
+$colorDarkDarkPink :#371037;
+$colorPurple : #7900D8;
+$colorGray : #C3BBBE;
+.adminAnime-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+
+    button {
+        padding: 14px;
+        font-size: 24px;
+        background-color: $colorPurple;
+        color: $colorWhite;
+        cursor: pointer;
+        border: none;
+        border-radius: 15px;
+        
+
+        &:hover {
+            background-color: $colorBlack;
+        }
+    }
+}
+.adminAnimeTag-container{
+    display: flex;
+    justify-content: space-between;
+}
+.adminAnimeTag-container-table1{
+    width: 40%;
+}
+.adminAnimeTag-container-table2{
+    width: 55%;
+}
+.adminAnimeTag-container-header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    
+    button {
+        padding: 12px;
+        font-size: 18px;
+        background-color: $colorPurple;
+        color: $colorWhite;
+        cursor: pointer;
+        border: none;
+        border-radius: 15px;
+        &:hover {
+            background-color: $colorBlack;
+        }
+    }
+    h2{ 
+        padding: 20px;
+        font-size: 24px;
+    }
+}
