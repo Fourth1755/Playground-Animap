@@ -1,0 +1,20 @@
+$colorPink: #FF1493;
+$colorBlack: #000000;
+$colorWhite: #FFFFFF;
+$colorDarkPink: #201020;
+$colorDarkDarkPink :#371037;
+$colorPurple : #7900D8;
+$colorGray : #C3BBBE;
+.adminTable-detail-button{
+    cursor: pointer;
+    padding: 14px;
+    font-size: 18px;
+    padding: 12px 20px 12px 20px;
+    background-color: $colorPurple;
+    color: $colorWhite ;
+    border-radius: 8px;
+    border: none;
+    &:hover {
+        background-color: $colorBlack;
+    }
+}
