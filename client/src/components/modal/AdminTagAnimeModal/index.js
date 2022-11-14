@@ -1,25 +1,21 @@
-import Modal from "@mui/material/Modal";
-import "./index.scss";
-import FormControl from "@mui/material/FormControl";
-import TextField from "@mui/material/TextField";
 import { useState, useEffect } from "react";
-import "./index.scss";
 import axios from "axios";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
-import { fetchTagAsync } from "../../actions/tagListAction";
-import { fetchTagByAnimeIdAsync } from "../../actions/tagAnimeListAction";
-import { useSelector, useDispatch } from "react-redux";
-import AddAnimeModal from "../AddAnimeModal";
+import FormControl from "@mui/material/FormControl";
+import Modal from "@mui/material/Modal";
 import Select from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
+import { useGetAllTagQuery }from '../../../services/tag'
+import { useSelector, useDispatch } from "react-redux";
+
 const AdminTagAnimeModal = (props) => {
   const { open, onClose, anime, mode } = props;
   const MySwal = withReactContent(Swal);
   const [selectTag, setSelectTag] = useState("");
   const dispatch = useDispatch();
+  const { data:Tag, error:errorTag, isLoading:isLoadingTag } = useGetAllTagQuery()
   const onChangItem = (name) => (event) => {
-    console.log(event.target.value)
     setSelectTag(event.target.value);
   };
   const submitFormTag = () => {
@@ -31,25 +27,18 @@ const AdminTagAnimeModal = (props) => {
         })
         .then((response) => {
           MySwal.fire("Alert", "บันทึกข้อมูลเรียบร้อย", "success");
-          dispatch(fetchTagAsync());
           setSelectTag("")
         })
         .catch((error) => {
           MySwal.fire("Alert", error, "error");
         });
   };
-  const Tag = useSelector((state) => state.tagList);
   const TagAnime = useSelector((state) => state.tagAnimeList);
   const [animeModal, setAnimeModal] = useState(anime);
-  useEffect(() => {
-    dispatch(fetchTagAsync());
-  }, []);
-
   useEffect(() => {
     if (open) {
       setAnimeModal(anime);
       console.log(anime.animes_id);
-      dispatch(fetchTagByAnimeIdAsync(anime.animes_id));
     } else {
       setAnimeModal([]);
     }
