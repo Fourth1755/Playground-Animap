@@ -46,7 +46,7 @@ function EnhancedTableHead() {
   );
 }
 export default function AdminAnimeTable(props) {
-  const {anime, isLoading, error} =props
+  const { anime } =props
   const [page, setPage] = useState(0);
   const [rowsPerPage, setRowsPerPage] = useState(10);
 
@@ -86,11 +86,7 @@ export default function AdminAnimeTable(props) {
             <TableBody>
               {/* if you don't need to support IE11, you can replace the `stableSort` call with:
                  rows.slice().sort(getComparator(order, orderBy)) */}
-                 {error ? (
-                    <>Oh no, there was an error</>
-                ) : isLoading ? (
-                    <>Loading...</>
-                ) : anime ? anime
+                 {anime
                     .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
                     .map((row, index) => { 
                       return (
@@ -116,7 +112,7 @@ export default function AdminAnimeTable(props) {
                           <TableCell align="left"><button className='adminTable-detail-button' onClick={()=>handleOpen(row,"edit")}>Detail</button></TableCell>
                         </TableRow>
                       );
-                    }) : null}
+                    })}
               {emptyRows > 0 && (
                 <TableRow
                   style={{
