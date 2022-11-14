@@ -42,12 +42,10 @@ function EnhancedTableHead() {
     </TableHead>
   );
 }
-export default function AdminTagTable() {
-    const dispatch=useDispatch()
-    const TagAnime = useSelector(state => state.tagList)
+export default function AdminTagTable(props) {
+    const {TagAnime } = props
     const [page, setPage] = useState(0);
     const [rowsPerPage, setRowsPerPage] = useState(10);
-
     const handleChangePage = (event, newPage) => {
         setPage(newPage);
     };
