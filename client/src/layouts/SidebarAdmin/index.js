@@ -21,7 +21,7 @@ import { pink } from '@mui/material/colors';
 import { Route ,Routes} from 'react-router-dom'
 import AdminHomePage from '../../pages/Admin/AdminHomePage';
 import AdminAnimePage from '../../pages/Admin/AdminAnimePage';
-//import AdminAnimeTagPage from '../../pages/AdminAnimeTagPage';
+import AdminTagPage from '../../pages/Admin/AdminTagPage';
 import NotFoundPage from '../../pages/NotFoundPage';
 import { useNavigate } from "react-router-dom";
 import './index.scss'
@@ -132,7 +132,7 @@ function SidebarAdmin(props) {
                     <Route path="/" element={<AdminHomePage/>}/>
                     <Route path="*" element={<NotFoundPage/>}/>
                     <Route path="/adminanime" element={<AdminAnimePage/>}/>
-                    
+                    <Route path="/admintaganime" element={<AdminTagPage/>}/>
                 </Routes>
             </Box>
         </Box>
