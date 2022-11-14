@@ -11,7 +11,6 @@ import Paper from '@mui/material/Paper';
 import { pink } from '@mui/material/colors';
 import { useSelector, useDispatch } from 'react-redux'
 import AdminTagModal from "../../modal/AdminTagModal";
-import { useGetAllTagQuery }from '../../../services/tag'
 
 // This method is created for cross-browser compatibility, if you don't
 // need to support IE11, you can use Array.prototype.sort() directly
@@ -43,7 +42,7 @@ function EnhancedTableHead() {
   );
 }
 export default function AdminTagTable(props) {
-    const {TagAnime } = props
+    const { TagAnime } = props
     const [page, setPage] = useState(0);
     const [rowsPerPage, setRowsPerPage] = useState(10);
     const handleChangePage = (event, newPage) => {
