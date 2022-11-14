@@ -1,5 +1,4 @@
 import { useState,useEffect } from "react";
-import './index.scss'
 import Box from '@mui/material/Box';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -12,7 +11,7 @@ import Paper from '@mui/material/Paper';
 import { pink } from '@mui/material/colors';
 import { useSelector, useDispatch } from 'react-redux'
 import AdminTagAnimeModal from "../../modal/AdminTagAnimeModal";
-import { fetchAnimeAsync } from '../../actions/animeListAction'
+
 
 // This method is created for cross-browser compatibility, if you don't
 // need to support IE11, you can use Array.prototype.sort() directly
@@ -43,36 +42,30 @@ function EnhancedTableHead() {
     </TableHead>
   );
 }
-export default function AdminTagAnimeTable() {
+export default function AdminTagAnimeTable(props) {
+  const { Dataanime } = props
   const dispatch=useDispatch()
-  const TagAnime = useSelector(state => state.tagList)
-  const Dataanime =useSelector(state=>state.animeList)
   const [page, setPage] = useState(0);
   const [rowsPerPage, setRowsPerPage] = useState(10);
   const handleChangePage = (event, newPage) => {
     setPage(newPage);
   };
-
+  
   const handleChangeRowsPerPage = (event) => {
     setRowsPerPage(parseInt(event.target.value, 10));
     setPage(0);
   };
-
-
-  useEffect(()=>{
-    dispatch(fetchAnimeAsync())
-  },[])
-
   // Avoid a layout jump when reaching the last page with empty rows.
   const emptyRows =
-    page > 0 ? Math.max(0, (1 + page) * rowsPerPage - Dataanime.length) : 0;
-    const [modalAnime,setModalAnime]=useState([])
-    const [open, setOpen] = useState(false);
-    const handleOpen = (item) => {
-        setModalAnime(item)
-        setOpen(true);
-    }
-    const handleClose = () =>setOpen(false);
+      page > 0 ? Math.max(0, (1 + page) * rowsPerPage - Dataanime.length) : 0;
+      const [modalAnime,setModalAnime]=useState([])
+      const [open, setOpen] = useState(false);
+      const handleOpen = (item) => {
+          setModalAnime(item)
+          setOpen(true);
+      }
+      const handleClose = () =>setOpen(false);
+    
   return (
     <Box sx={{ width: '100%' }}>
       <Paper sx={{ width: '100%', mb: 2 }}>
@@ -132,7 +125,7 @@ export default function AdminTagAnimeTable() {
           onRowsPerPageChange={handleChangeRowsPerPage}
         />
       </Paper>
-      {/* <AdminTagAnimeModal open={open} onClose={handleClose} anime={modalAnime}/> */}
+      <AdminTagAnimeModal open={open} onClose={handleClose} anime={modalAnime}/>
     </Box>
   );
 }
