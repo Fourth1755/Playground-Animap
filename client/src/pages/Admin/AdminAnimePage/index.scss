@@ -9,17 +9,13 @@ $colorGray : #C3BBBE;
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
-
     button {
-        padding: 14px;
-        font-size: 24px;
+        font-size: 18px;
         background-color: $colorPurple;
         color: $colorWhite;
         cursor: pointer;
         border: none;
         border-radius: 15px;
-        
-
         &:hover {
             background-color: $colorBlack;
         }

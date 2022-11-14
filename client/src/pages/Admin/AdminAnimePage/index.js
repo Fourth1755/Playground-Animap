@@ -78,15 +78,7 @@ const AdminAnimePage = () => {
             return item
         }
     }
-    const dispatch=useDispatch()
-    useEffect(()=>{
-        //dispatch(fetchAnimeAsync())
-    },[])
-    //const Dataanime = useSelector(state=>state.animeList)
-
     const displayAnime=data?.filter(filterAnime);
-
-    
     return (
         <div>
             <div className="adminAnime-header">
@@ -162,7 +154,7 @@ const AdminAnimePage = () => {
                     <>Oh no, there was an error</>
                 ) : isLoading ? (
                     <>Loading...</>
-                ) :<AdminAnimeTable anime={displayAnime} isLoading={isLoading} isError={error}/>
+                ) :<AdminAnimeTable anime={displayAnime}/>
                 }
             <AdminAddAnimeModal open={open} onClose={handleClose} anime={modalAnime} mode={modalMode} />
         </div>
