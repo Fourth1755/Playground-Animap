@@ -158,7 +158,12 @@ const AdminAnimePage = () => {
                     </div>
                 </div>
             </Paper>
-            <AdminAnimeTable anime={displayAnime} isLoading={isLoading} isError={error}/>
+            {error ? (
+                    <>Oh no, there was an error</>
+                ) : isLoading ? (
+                    <>Loading...</>
+                ) :<AdminAnimeTable anime={displayAnime} isLoading={isLoading} isError={error}/>
+                }
             <AdminAddAnimeModal open={open} onClose={handleClose} anime={modalAnime} mode={modalMode} />
         </div>
     )
