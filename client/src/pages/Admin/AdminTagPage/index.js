@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react';
 import "./index.scss";
 import AdminTagTable from "../../../components/table/AdminTagTable";
+import AdminTagAnimeTable from '../../../components/table/AdminTagAnimeTable';
 import AdminTagModal from "../../../components/modal/AdminTagModal";
 import { useGetAllTagQuery }from '../../../services/tag'
+import { useGetAllAnimesQuery } from '../../../services/anime'
 const AdminTagPage = () => {
     const [modalTag, setModalTag] = useState()
     const [modalModeTag, setModalModeTag] = useState('')
@@ -15,10 +17,11 @@ const AdminTagPage = () => {
         }
         setOpenTag(true);
     }
-    const { data, error, isLoading } = useGetAllTagQuery()
+    const { data:tag, error:errorTag, isLoading } = useGetAllTagQuery()
+    const { data:anime, error:errorAnime, isLoading:isLoadingAnime } = useGetAllAnimesQuery()
     return (
         <div>
-            <div className="adminAnime-header">
+            <div className="adminAnimeTag-header">
                 <h1>Manage Tag Anime</h1>
             </div>
             <div className="adminAnimeTag-container">
@@ -26,19 +29,25 @@ const AdminTagPage = () => {
                     <div className="adminAnimeTag-container-header">
                     <h2>Anime</h2>
                     </div>
-                    {/* <AdminTableTagAnime/> */}
+                    {errorAnime ? (
+                        <>Oh no, there was an error</>
+                    ) : isLoadingAnime ? (
+                        <>Loading...</>
+                    ) : anime ? (
+                        <AdminTagAnimeTable Dataanime = {anime}/>
+                    ) : null}
                 </div>
                 <div className="adminAnimeTag-container-table1">
                     <div className="adminAnimeTag-container-header">
                     <h2>Tag</h2>
                         <button onClick={() => handleOpenModalTag([], "create")}>Add Tag</button> 
                     </div>
-                    {error ? (
+                    {errorTag ? (
                         <>Oh no, there was an error</>
                     ) : isLoading ? (
                         <>Loading...</>
-                    ) : data ? (
-                        <AdminTagTable TagAnime = {data}/>
+                    ) : tag ? (
+                        <AdminTagTable TagAnime = {tag}/>
                     ) : null}
                 </div>
             </div>
