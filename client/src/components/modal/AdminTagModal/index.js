@@ -79,9 +79,9 @@ const AdminTagModal = (props) => {
         aria-describedby="modal-modal-description"
         className="modal-body"
       >
-        <div className="modal-addanime-modalStyles">
+        <div className="modal-addTag-modalStyles">
           {mode == "create" ? <h1>Add New Tag</h1> : <h1>Edit Tag</h1>}
-          <div className="modal-addanime-container">
+          <div className="modal-addTag-container">
             <FormControl
               fullWidth
               sx={{
@@ -136,7 +136,7 @@ const AdminTagModal = (props) => {
               />
             </FormControl>
           </div>
-          <div className="modal-addanime-container-bottom">
+          <div className="modal-addTag-container-bottom">
             <button onClick={submitFormTag}>
               {mode == "create" ? "Add New" : " Edit Tag"}
             </button>

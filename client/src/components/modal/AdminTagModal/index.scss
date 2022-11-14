@@ -10,7 +10,7 @@ $colorGray : #C3BBBE;
     overflow-y: auto;
 }
 
-.modal-addanime-modalStyles {
+.modal-addTag-modalStyles {
     position: absolute;
     top: 60%;
     left: 50%;
@@ -26,11 +26,11 @@ $colorGray : #C3BBBE;
     }
 }
 
-.modal-addanime-container {
+.modal-addTag-container {
     padding: 20px 50px 20px 50px;
 }
 
-.modal-addanime-container-bottom {
+.modal-addTag-container-bottom {
     padding: 0px 50px 40px 50px;
     display: flex;
     justify-content: center;
@@ -50,7 +50,7 @@ $colorGray : #C3BBBE;
     }
 }
 
-.modal-addanime-form {
+.modal-addTag-form {
     display: flex;
     justify-content: space-between;
 }
