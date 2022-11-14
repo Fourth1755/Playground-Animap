@@ -115,12 +115,12 @@ const AdminAddAnimeModal = (props) => {
                 className='modal-body'
             >
                 <div className="modal-addanime-modalStyles">
-                    {mode == "create" ? <h1>Add New Anime</h1> : <h1>Edit Anime</h1>}
+                    {mode == "create" ? <h2>Add New Anime</h2> : <h2>Edit Anime</h2>}
                     <div className="modal-addanime-container">
                         <FormControl
                             fullWidth
                             sx={{
-                                mb: 3
+                                mb: 1
                             }}
                             variant="standard"
                         >
@@ -140,7 +140,7 @@ const AdminAddAnimeModal = (props) => {
                                 variant="standard"
                                 sx={{
                                     width: 240,
-                                    mb: 3
+                                    mb: 1
                                 }}
                             >
                                 <h3>Score</h3>
@@ -157,7 +157,7 @@ const AdminAddAnimeModal = (props) => {
                             <FormControl
                                 sx={{
                                     width: 240,
-                                    mb: 3
+                                    mb: 1
                                 }}
                             >
                                 <h3>Studio</h3>
@@ -178,7 +178,7 @@ const AdminAddAnimeModal = (props) => {
                             <FormControl
                                 sx={{
                                     width: 240,
-                                    mb: 3
+                                    mb: 1
                                 }}
                             >
                                 <h3>Season</h3>
@@ -198,7 +198,7 @@ const AdminAddAnimeModal = (props) => {
                                 variant="standard"
                                 sx={{
                                     width: 240,
-                                    mb: 3
+                                    mb: 1
                                 }}
                             >
                                 <h3>Year</h3>
@@ -221,7 +221,7 @@ const AdminAddAnimeModal = (props) => {
                                 variant="standard"
                                 sx={{
                                     width: 240,
-                                    mb: 3
+                                    mb: 1
                                 }}
                             >
                                 <h3>Episodes</h3>
@@ -239,7 +239,7 @@ const AdminAddAnimeModal = (props) => {
                                 variant="standard"
                                 sx={{
                                     width: 240,
-                                    mb: 3
+                                    mb: 1
                                 }}
                             >
                                 <h3>Duration</h3>
@@ -258,7 +258,7 @@ const AdminAddAnimeModal = (props) => {
                         <FormControl
                             fullWidth
                             sx={{
-                                mb: 3
+                                mb: 1
                             }}
                             variant="standard"
                         >
@@ -277,7 +277,7 @@ const AdminAddAnimeModal = (props) => {
                         <FormControl
                             fullWidth
                             sx={{
-                                mb: 3
+                                mb: 1
                             }}
                             variant="standard"
                         >
@@ -296,7 +296,7 @@ const AdminAddAnimeModal = (props) => {
                         <FormControl
                             fullWidth
                             sx={{
-                                mb: 3
+                                mb: 1
                             }}
                             variant="standard"
                         >
@@ -315,7 +315,7 @@ const AdminAddAnimeModal = (props) => {
                         <FormControl
                             fullWidth
                             sx={{
-                                mb: 3
+                                mb: 1
                             }}
                             variant="standard"
                         >

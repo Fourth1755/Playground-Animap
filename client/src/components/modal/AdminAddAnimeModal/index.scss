@@ -12,22 +12,20 @@ $colorGray : #C3BBBE;
 
 .modal-addanime-modalStyles {
     position: absolute;
-    top: 60%;
+    top: 95%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 640px;
     background-color: $colorWhite;
     border: none;
     border-radius: 15px;
-
-    h1 {
-        padding: 20px;
+    h2 {
         text-align: center;
     }
 }
 
 .modal-addanime-container {
-    padding: 20px 50px 20px 50px;
+    padding: 0px 40px 0px 40px;
 }
 
 .modal-addanime-container-bottom {
