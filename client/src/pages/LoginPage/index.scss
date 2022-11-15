@@ -1,0 +1,75 @@
+$colorPink:#FF1493;
+$colorBlack:#000000;
+$colorWhite:#FFFFFF;
+$colorDarkPink:#201020;
+$colorDarkDarkPink :#371037;
+.login-bar{
+    display: flex;
+    width: 100%;
+}
+.login-logo{
+    padding: 10px 10px 10px 20px;
+    h1{
+        font-size: 40px;
+        a{
+            display: block;
+            color: $colorPink;
+            text-align: center;
+            text-decoration: none;
+            &:hover{
+                color: $colorWhite;
+            }
+        }
+    }
+}
+.login-container{
+    width: 480px;
+    margin: auto;
+    
+}
+.login-card{
+    background-color: $colorBlack;
+    width: 100%;
+    padding: 50px 40px 100px 40px;
+    border-radius: 20px;
+    h1{
+        color: $colorWhite;
+        font-size: 48px;
+        font-weight: 500;
+        padding-bottom: 15px;
+    }
+}
+.login-button{
+    width: 100%;
+    background-color: $colorPink;
+    border-radius: 20px;
+    color: $colorWhite;
+    font-size: 32px;
+    font-weight: 500;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.login-card-bottom{
+    display: flex;
+    margin: -10px;
+    p{
+        color: rgba(255, 255, 255, 0.60);
+        margin: 10px;
+    }
+    a{
+        margin: 10px;
+        font-weight: bold;
+        color: $colorWhite;
+        text-align: center;
+        text-decoration: none;
+        &:hover{
+            color: $colorDarkDarkPink;
+        }
+    }
+}
+.textField{
+    background-color: $colorWhite;
+    border-radius: 4px;
+}
