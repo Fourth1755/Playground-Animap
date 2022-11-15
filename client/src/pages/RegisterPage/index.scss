@@ -1,0 +1,132 @@
+$colorPink:#FF1493;
+$colorBlack:#000000;
+$colorWhite:#FFFFFF;
+$colorDarkPink:#201020;
+$colorDarkDarkPink :#371037;
+.login-bar{
+    display: flex;
+    width: 100%;
+}
+.login-logo{
+    padding: 10px 10px 10px 20px;
+    h1{
+        font-size: 32px;
+        a{
+            display: block;
+            color: $colorPink;
+            text-align: center;
+            text-decoration: none;
+            &:hover{
+                color: $colorWhite;
+            }
+        }
+    }
+}
+.login-container{
+    width: 450px;
+    margin: auto;
+    
+}
+.login-card{
+    background-color: $colorBlack;
+    width: 100%;
+    padding: 30px 40px 80px 40px;
+    border-radius: 20px;
+    h2{
+        color: $colorWhite;
+        font-size: 28px;
+        font-weight: 500;
+        padding-bottom: 15px;
+        text-align: center;
+    }
+}
+.register-button{
+    width: 100%;
+    background-color: $colorPink;
+    border-radius: 20px;
+    color: $colorWhite;
+    font-size: 32px;
+    font-weight: 500;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.register-button-disabled{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.60);
+    border-radius: 20px;
+    color: $colorWhite;
+    font-size: 32px;
+    font-weight: 500;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor:not-allowed;
+}
+.login-card-bottom{
+    display: flex;
+    margin: -10px;
+    p{
+        color: rgba(255, 255, 255, 0.60);
+        margin: 10px;
+    }
+    a{
+        margin: 10px;
+        font-weight: bold;
+        color: $colorWhite;
+        text-align: center;
+        text-decoration: none;
+        &:hover{
+            color: $colorDarkDarkPink;
+        }
+    }
+}
+.textField{
+    background-color: $colorWhite;
+    border-radius: 4px;
+}
+.register-password{
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 4px;
+    background-color: #151414;
+    h5{
+        color: rgba(255, 255, 255, 0.40);
+        padding: 10px;
+        font-size: 18px;
+        font-weight: 300;
+    }
+}
+.valid {
+    color: green;
+    padding: 8px;
+    display: flex;
+    p{
+        color: rgba(255, 255, 255, 0.60);
+    }
+}
+  
+.valid:before {
+    //position: relative;
+    left: -35px;
+    margin-right: 6px;
+    content: "✔";
+}
+  
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+    color: red;
+    padding: 8px;
+    display: flex;
+    p{
+        color: rgba(255, 255, 255, 0.60);
+    }
+}
+  
+.invalid:before {
+    //position: relative;
+    left: -35px;
+    margin-right: 6px;
+    content: "✖";
+}
