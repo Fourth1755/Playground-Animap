@@ -1,12 +1,14 @@
 import './App.scss';
+import { useState, useEffect } from "react";
+import { useLocation } from 'react-router-dom'
+import {Route ,Routes} from 'react-router-dom'
 import Navbar from './layouts/Navbar';
 import HomePage from './pages/User/HomePage';
 import NotFoundPage from './pages/NotFoundPage';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import SidebarAdmin from './layouts/SidebarAdmin';
-import { useLocation } from 'react-router-dom'
-import {Route ,Routes} from 'react-router-dom'
+import { getRole, getUser,logout } from "../src/services/authorize";
 function App() {
   const AuthApp=()=>{
     return (
@@ -40,10 +42,22 @@ function App() {
       </Routes>
       )
   }
+  const user= getUser()
+  const location = useLocation();
+  const [roleUser,setRoleUser]=useState("")
+  useEffect(()=>{
+    if(user){
+      setRoleUser(getRole())
+    }
+    
+  },[user])
   return (
     <>
-      
-      <AuthApp/>
+    {roleUser=="admin"&&user?<SidebarAdmin/>:
+     <div>
+       {location.pathname=="/login" ||location.pathname=="/register"?<></> :<Navbar/>}
+       {!user?<UnAuthApp/>:<AuthApp/>}
+    </div>}
     </>
   );
 }
