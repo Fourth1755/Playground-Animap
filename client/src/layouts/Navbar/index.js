@@ -1,9 +1,11 @@
 import './index.scss'
 import { Link } from "react-router-dom";
 import { useState } from 'react';
-
+import { getRole, getUser,logout } from "../../services/authorize";
+import ProfileBar from '../../components/molecule/ProfileBar';
+import SearchBarAnime from '../../components/molecule/SearchBarAnime';
 const Navbar=()=>{
-    //const user=getUser()
+    const user=getUser()
     const [isNavExpanded, setIsNavExpanded] = useState(false)
     return(
         <div className='navigation'>
@@ -22,8 +24,8 @@ const Navbar=()=>{
                 </div>
             </div>
             <div className='navigation-right'>
-                {/* <SearchBarAnime/> */}
-                {/* {user?<ProfileBar/>:<Link to="/login" className='navbar-login-button' >Login</Link>} */}
+                <SearchBarAnime/>
+                {user?<ProfileBar/>:<Link to="/login" className='navbar-login-button' >Login</Link>}
             </div>
         </div>
     )
