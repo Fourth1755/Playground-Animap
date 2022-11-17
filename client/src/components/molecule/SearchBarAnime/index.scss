@@ -1,0 +1,32 @@
+$colorPink:#FF1493;
+$colorBlack:#000000;
+$colorWhite:#FFFFFF;
+$colorGray:#313131;
+
+.searchBar-input{
+    background-color: $colorWhite;
+    border-radius: 4px;
+    border: none;
+}
+.searchBar{
+    background-color: $colorWhite;
+    padding: 0px 10px 0px 0px;
+    width: 320px;
+    display: flex;
+    margin-right: 20px;
+    border-radius: 6px;
+}
+.searchBar-button{
+    border: none;
+    color: $colorBlack;
+}
+.searchItem{
+    width: 250px;
+    margin: 1px;
+    padding: 5px;
+    font-size: 20px;
+    border-width: 10px;
+    background-color: $colorWhite;
+    position: absolute;
+    top:65px
+}
