@@ -57,42 +57,46 @@ const LoginPage = () => {
     const handleMouseDownPassword = (event) => {
         event.preventDefault();
     };
-    // const submitForm = () => {
-    //     axios.post(`http://localhost:5000/login`, {
-    //         username: email,
-    //         password: password
-    //     })
-    //         .then((response) =>response.data)
-    //         .then((res) => { authenticate(res, () => navigate('/')) })
-    //         .catch(err => {
-    //             MySwal.fire(
-    //                 'เข้าสู่ระบบไม่สำเร็จ',
-    //                 'Email or Password is wrong',
-    //                 'error',
-    //                 err,
-    //             )
-    //         })
-    // }
-    const submitForm = async (e) => {
-        e.preventDefault()
-        await fetch(`http://localhost:5000/login`,{
-            method:'POST',
-            credentials:'include',
-            body:JSON.stringify({
-                username: email, 
-                password: password
-            })
-        }).then((response) =>response.data)
-        .then((res) => { authenticate(res, () => navigate('/')) })
-        .catch(err => {
-            MySwal.fire(
-                'เข้าสู่ระบบไม่สำเร็จ',
-                `${err}`,
-                'error',
-                err,
-            )
-        })  
+    const submitForm = () => {
+        axios.post(`http://localhost:5000/login`, {
+            username: email,
+            password: password
+        })
+            .then((response) =>response.data)
+            .then((res) => { authenticate(res, () => navigate('/')) })
+            .catch(err => {
+                MySwal.fire(
+                    'เข้าสู่ระบบไม่สำเร็จ',
+                    `${err.response.data.error}`,
+                    'error',
+                    err,
+                )
+             })
     }
+
+    // const submitForm = async () => {
+    //     await fetch(`http://localhost:5000/login`,{
+    //         method:'POST',
+    //         headers:{
+    //             'Content-Type':'application/json',
+    //         },
+    //         body:JSON.stringify({
+    //             username: email, 
+    //             password: password
+    //         }),
+    //     }).then(response =>response.json())
+    //     .then((data) => { 
+    //         authenticate(data, () => navigate('/'))
+    //    })
+    //     .catch((err) => {
+    //         MySwal.fire(
+    //             'เข้าสู่ระบบไม่สำเร็จ',
+    //             `${err.response.data.error}`,
+    //             'error',
+    //             err,
+    //         )
+    //     })  
+    // }
     return (
         <div>
             <div className='login-bar'>
